@@ -1,0 +1,5 @@
+require_relative 'config'
+
+class CreateSenators < ActiveRecord::Base
+
+end
