@@ -1,4 +1,4 @@
-require '../config'
+require_relative '../config'
 
 class CreatePoliticians < ActiveRecord::Migration
   def change
@@ -11,11 +11,11 @@ class CreatePoliticians < ActiveRecord::Migration
       t.string :lastname
       t.string :name_suffix
       t.string :nickname
-      t.char :party
+      t.string :party
       t.string :state
       t.integer :district
       t.integer :in_office
-      t.char :gender
+      t.string :gender
       t.string :phone
       t.string :fax
       t.string :website
