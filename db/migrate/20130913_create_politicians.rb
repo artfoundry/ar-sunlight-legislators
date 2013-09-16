@@ -2,8 +2,6 @@ require_relative '../config'
 
 class CreatePoliticians < ActiveRecord::Migration
   def change
-    puts "test"
-
     create_table(:politicians) do |t|
       t.string :title
       t.string :firstname
@@ -33,6 +31,10 @@ class CreatePoliticians < ActiveRecord::Migration
       t.string :official_rss
       t.string :senate_class
       t.string :birthdate
+
+      t.timestamps
     end
   end
 end
+
+

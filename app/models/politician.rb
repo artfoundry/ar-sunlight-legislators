@@ -1,5 +1,5 @@
-require_relative '../../db/migrate/config'
+require_relative '../../db/config'
 
 class Politician < ActiveRecord::Base
-  puts "test"
+
 end
